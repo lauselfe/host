@@ -1,0 +1,200 @@
+/*Css de inicio y encuesta*/
+
+body{
+    background: var(--crema);
+}
+
+h2{
+    color: var(--claro);
+    margin-top: 8rem;
+    text-align: center;
+}
+
+h3{
+    color: var(--claro);
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+
+h5{
+    color: var(--marron);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.contenedor-posts{
+
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+
+}
+
+.contenedor{
+    margin: 0;
+    padding: 2rem;
+    background-image: url(../img/reviewsfondo.jpg);
+    width: 100%;
+}
+
+.contenedor-libros{
+    margin: 2rem 10%;
+    
+    
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+}
+
+.libros{
+    display: flex;
+   
+    
+}
+
+.libro ul{
+    list-style: none;
+}
+
+.libro li{
+    color: var(--gris);
+}
+
+.votos{
+    order: 1;
+    cursor: pointer;
+    color: var(--marron);
+}
+
+.libro{
+    margin-right: 1rem;
+    order: 2;
+    color: var(--oscuro);
+}
+
+.marcar:hover{
+    animation: marcar 2s ease-in-out infinite;
+    color: var(--claro);
+}
+
+@keyframes marcar{
+    from{
+        transform: translateY(0);
+
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+.reviews{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
+
+.review{
+    width: 30%;
+    border: 1px solid var(--gris);
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+
+.user-logout{
+    display: flex;
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center; 
+}
+
+.user-logout p{
+   margin-right: 1rem;
+   margin-left: 0.3rem;
+   margin-top: 0.9rem;
+}
+
+.user{
+    color: var(--claro);
+    
+}
+
+.user:hover{
+    color: var(--marron);
+
+}
+
+.logout:hover{
+    color: var(--marron);
+}
+
+.logout{
+    color: var(--claro);
+    
+}
+
+p{
+    color: var(--gris);
+}
+
+h4{
+    color: var(--claro);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+a{
+    color: var(--marron);
+}
+
+a:hover{
+    color: var(--gris);
+    text-decoration: none;
+}
+
+
+
+.likes{
+    width: 100%;
+}
+
+.subir-foto{
+    margin-top: 5rem;
+}
+
+@media(max-width: 768px){
+    .contenedor-posts{
+        width: 100%;
+        margin: 5rem 0;
+        
+    }
+
+    .posts{
+        margin: 0.5rem 0;
+    }
+
+    .review{
+        width: 100%;
+    }
+}

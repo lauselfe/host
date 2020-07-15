@@ -1,0 +1,101 @@
+
+
+
+.contacto{
+    /*padding-top: 10rem;*/
+    background-image: url(../img/contacto-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.contacto::before{
+    position:absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: 20;
+    opacity: 0.5;
+    background: var(--oscuro);
+}
+
+.enviar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    z-index: 60;
+}
+
+.form-contacto{
+    margin-right: 5rem;
+    z-index: 70;
+}
+
+.mapa{
+    z-index: 90;
+}
+
+.footer-contacto{
+    margin-top: -4rem;
+    z-index: 80;
+}
+
+.footer-contacto p{
+    padding-top: 0.5rem;
+    color: var(--claro);
+}
+
+.footer-contacto nav ul{
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+}
+
+.footer-contacto nav ul li a{
+    padding: 1rem;
+    color: var(--claro);
+}
+
+.footer-contacto nav ul li a:hover{
+   
+    color: var(--marron);
+}
+
+@media (max-width: 768px){
+
+.contacto{
+    height: 115vh;
+    display: block;
+
+}
+
+.contacto::before{
+    height: 115vh ;
+}
+
+.form-contacto{
+    margin-top: 5rem;
+}
+
+
+.mapa{
+    height: 40vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-contacto{
+    margin-top: -7rem;
+}
+
+
+}

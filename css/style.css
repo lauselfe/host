@@ -1,0 +1,753 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/*variables paleta de color*/
+
+:root{
+    --oscuro: #2d2d2b;
+}  
+
+:root{
+    --claro: #eae6df;
+}  
+:root{
+    --gris: #b0b0b0;
+}  
+:root{
+    --crema: #d4c8be;
+}  
+
+:root{
+    --marron: #b8926a;
+}  
+
+/*Variables tipografia*/
+
+:root{
+    --sanserif: Quicksand, sans-serif;
+}
+
+:root{
+    --serif: Cormorant Garamond, serif;
+}
+
+h3, h2, h1, h4, h5, h6{
+    font-family: var(--sanserif);
+}
+
+p{
+    font-family: var(--serif);
+}
+
+section{
+    padding-top: 3rem;
+}
+
+/*bienvenidos/principal*/
+
+
+.principal{
+    background-image: url(../img/portada-movil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+   
+}
+
+
+/*navbar*/
+
+.bg-dark{
+    color: var(--oscuro) !important;
+    background: var(--oscuro) !important;
+   
+}
+.logo{
+    height: auto;
+    width: 60px;
+}
+.logo img{
+    width: 100%;
+
+
+
+}
+
+.user-login{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: var(--claro);   
+    
+}
+
+.user-login a {
+  color: var(--claro);  
+  margin-top: 1rem;
+  margin-left: 0.7rem;
+  
+}
+
+.user-login:hover{
+    color: var(--marron);
+}
+
+
+
+
+
+.navbar-dark .navbar-toggler{
+    border-color: transparent;
+}
+
+.navbar-toggler{
+    padding: 0px;
+}
+
+button:focus{
+    outline: none;
+}
+
+/*seccion bienvenidos*/
+
+.bienvenido .row .col-10{
+   
+    margin: 0 auto;
+}
+
+.bienvenido img{
+    margin-top: 4rem;
+    
+}
+
+ h1{
+    font-family: var(--sanserif);
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;;
+    color: var(--marron);
+}
+
+.bienvenido h1{
+    margin-top: -3rem;
+    text-align: center;
+}
+
+.bienvenido p{
+   font-family: var(--serif);
+    text-align: center;
+    color: var(--gris);
+}
+
+.bienvenido p .entra{
+    color: var(--marron);
+}
+
+.bienvenido  p .entra:hover{
+    text-decoration: none;
+    color: var(--claro);
+}
+
+ .btn-primary{
+    background: var(--marron);
+    border-color: var(--oscuro);
+    border-radius: 100px;
+    font-family: Quicksand, sans-serif;
+   
+}
+
+.btn-primary:hover{
+    background-color: var(--oscuro);
+    border-color: var(--marron);
+}
+
+.btn-primary:focus{
+    transition: all 2s;
+}
+
+
+.footer-bienvenidos{
+    margin-top: 2rem;
+}
+
+
+.footer-bienvenidos nav ul{
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+}
+
+.footer-bienvenidos nav ul li a{
+    padding: 1rem;
+    color: var(--oscuro);
+}
+
+.footer-bienvenidos nav ul li a:hover{
+   
+    color: var(--marron);
+}
+
+
+/*formulario modal*/
+
+.modal-header{
+    display: inline;
+}
+
+.modal-body label{
+    color: var(--oscuro);
+}
+
+/*formulario*/
+
+#login{
+    height: 100vh fit-content;
+    background: url(../img/fondo-form.jpg) no-repeat;
+    background-size: cover;
+    
+
+}
+
+
+
+.header-login{
+    padding-top:4rem;
+    text-align: center;
+}
+
+.header-login h2{
+    padding: 1rem 0;
+    color: var(--crema);
+    font-size: 24px;
+}
+
+.header-login p{
+    display: none;
+}
+
+.form-login{
+    margin: 0 auto;
+}
+
+.form-control{
+    background: var(--crema);
+    border: 2px solid var(--crema);
+    border-radius: 20px;
+    color: var(--gris);
+ 
+  
+}
+
+.form-control:focus{
+    background: var(--claro);
+    color: var(--oscuro);
+    
+    
+    border: 1px solid var(--marron);
+    box-shadow: 1px var(--oscuro);
+}
+
+label{
+    font-family: var(--sanserif);
+    text-align: center;
+    color: var(--claro);
+
+}
+
+input[type="submit"]{
+    background: var(--oscuro);
+    color: var(--crema);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+}
+
+#login p{
+    color: var(--crema);
+    padding-top: 1rem;
+}
+
+#login p a{
+    color: var(--marron);
+    padding-top: 1rem;
+}
+/*eventos*/
+
+/*cabecera de eventos*/
+
+
+.header-eventos h2{
+    font-family: Quicksand, sans-serif;
+    font-size: 32px;
+    
+    padding: 3rem;
+    color: var(--oscuro);
+}
+
+.header-eventos h2::before{
+display: block;
+width: 100%;
+margin-bottom: 0.8rem;
+content: "";
+border-top: 2px solid
+var(--marron);
+}
+
+.header-eventos{
+   
+    background: var(--claro);
+  
+}
+/*evento proximo*/
+
+.evento-proximo{
+    background: url(../img/cafe-menu.jpg) no-repeat;
+    background-size: cover;
+    height: 60vh fit-content;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.evento-proximo::before{
+    position:absolute;
+
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: 99;
+    opacity: 0.5;
+    background: var(--oscuro);
+}
+
+.evento-proximo h3 a{
+    position: relative;
+    z-index: 100;
+    margin: 1.5rem 0 0 1rem;
+    text-align: left;
+    
+    color: var(--marron);
+    
+    
+}
+
+.evento-proximo h3 a:hover{
+    color: var(--claro);
+    text-decoration: none;
+}
+
+.evento-proximo h4{
+    font-family: Quicksand, sans-serif;
+    color: var(--crema);
+    font-weight: 800;
+    text-align: left;
+    margin: 1.5rem 0 0 1rem;
+    position: relative;
+    z-index: 102;
+}
+
+.evento-proximo .btn-primary{
+    position: relative;
+    z-index: 101;
+    align-self: flex-end;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+}
+
+/*lista de eventos*/ 
+
+.evento-1 .imagen img{
+    height: 20vh;
+}
+
+.evento-2 .imagen img{
+    height: 13vh;
+}
+
+
+
+.evento-1{
+    display: flex;
+    margin: 0.5rem auto;
+    align-items: center;
+    padding: 1rem;
+}
+
+ .evento-1 .texto{
+    margin-left: 0.5rem;
+    text-align: right;
+}
+
+.evento-2::before, .evento-1::before{
+display: block;
+width: 100%;
+position: absolute;
+top: -2vh;
+content: "";
+border-top: 2px solid
+var(--marron);
+}
+
+
+
+.evento-2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0.5rem auto;
+    align-items: center;
+    padding: 1rem;
+}
+
+ .evento-2 .texto{
+    margin-left: 0.5rem;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.eventos a{
+    color: var(--marron);
+    
+}
+
+.eventos a:hover{
+    text-decoration: none;
+    color: var(--crema);
+}
+
+.reservar{
+    display: inline-block;
+    
+}
+
+.reservar:hover{
+    animation: reserva 2s ease-in-out infinite;
+}
+
+@keyframes reserva{
+    from{
+        transform: translateY(0);
+
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+/*Sobre nosotros*/
+
+.foto-nosotros{
+ 
+    margin-top: 6rem;
+    z-index: 100;
+    
+}
+
+.foto-nosotros img{
+    width: 90%;
+}
+
+.foto-nosotros::before{
+    position: absolute;
+    z-index: -1;
+    width: 90%;
+    height: 100%;
+    top: -2rem;
+    left: 2rem;
+    right: 2rem;
+
+    content: "";
+    background: var(--crema);
+
+}
+
+.contenido-nosotros h2{
+    color: var(--marron);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.contenido-nosotros p{
+    text-align: center;
+    padding: 1rem;
+}
+
+/*libros*/
+
+
+.foto-libros img{
+    width: 100%;
+}
+.texto-libros{
+   margin: 1rem 0;
+   border: 1px solid var(--marron); 
+   height: fit-content;
+   
+
+}
+.texto-libros h3{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.texto-libros p{
+    text-align: center;
+    padding: 1rem;
+}
+
+/*opiniones*/
+
+.opiniones{
+    background: var(--crema);
+    height: 100vh fit-content;
+}
+.header-opiniones{
+    text-align: center;
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.foto-opiniones{
+   display: flex;
+   justify-content: center;
+}
+.foto-opiniones img{
+    width: 60%;
+    border-radius: 50% !important;
+}
+
+.texto-opiniones{
+    /*display: flex;
+    justify-content: center;*/
+    text-align: center;
+    padding: 1rem 3rem;
+
+}
+
+.carousel-control-prev, .carousel-control-next{
+    color: var(--oscuro);
+    top: 13rem;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover,.carousel-control-next:active,.carousel-control-prev:active,.carousel-control-next:focus,.carousel-control-prev:focus{
+    color: var(--marron);
+}
+
+.carousel{
+    margin-top: 5rem;
+} 
+
+/*Galeria de fotos*/
+.header-galeria{
+    margin-top: 4rem;
+}
+.header-galeria h3{
+    text-align: center;
+}
+  
+.header-galeria p{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.galeria-grid{
+    position: relative;
+    overflow: hidden;
+}
+
+.img-galeria{
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.img-galeria img{
+    transition: transform 2s;
+    width: 100%;
+   
+   
+   
+}
+
+.img-galeria:hover img{
+    transform: scale(1.09);
+    
+}
+
+.img-galeria a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: background-color .5s;
+
+}
+
+.img-galeria a:hover::before{
+    background-color: var(--oscuro);
+    opacity: 0.5;
+}
+
+
+/*Footer principal*/
+
+.footer-principal{
+    margin-top: 3rem;
+    background: var(--oscuro);
+}
+
+.footer-principal h3{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 24px;
+    color: var(--marron);
+}
+
+.footer-principal p{
+    color: var(--crema);
+    text-align: center;
+}
+
+.footer-principal span{
+    padding: 0 0.5rem;
+    color: var(--gris);
+}
+
+.footer-principal nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+   
+    margin: 0;
+}
+
+.footer-principal nav ul li a {
+    padding: 0 2rem;
+    color: var(--marron);
+} 
+
+.footer-principal nav ul li a:hover{
+    text-decoration: none;
+    color: var(--crema);
+}
+
+@media(min-width: 768px){
+
+    
+.principal{
+    background: url(../img/cafeteria-barra.jpg) no-repeat;
+    background-size: cover;
+}
+    
+
+   
+    .principal{
+        height: 100vh;
+    }
+
+    
+
+
+
+    .footer-bienvenidos{
+        margin-top: 45px;
+    }
+    .footer-bienvenidos p {
+        margin-top: 1rem;
+    }
+
+    .footer-bienvenidos nav ul li a{
+        color: var(--marron);
+    }
+
+    .footer-bienvenidos nav ul li  a:hover{
+        color: var(--crema);
+    }
+
+
+    /*login*/
+
+    #login{
+        height: fit-content;
+        
+       padding: 20vh;
+       
+    }
+
+
+
+    .form-login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*eventos*/
+
+    .evento-proximo{
+        background: url(../img/chocolate-evento-md.jpg)no-repeat;
+        background-size: cover;
+    }
+
+    .evento-proximo .btn-primary{
+        margin-top: 9rem;
+    }
+
+    /*nosotros*/
+
+    .texto-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /*libros*/
+
+    .foto-libros{
+        margin-bottom: 2rem;
+    }
+
+    /*opiniones*/
+
+    .foto-opiniones img{
+        width: 40%;
+    }
+
+  
+}
+
+@media(min-width:1024px){
+    
+   
+    
+    .footer-bienvenidos{
+        margin-top: 6rem;
+    }
+
+    .header-login h2{
+        color: var(--marron);
+    }
+
+    .header-login p{
+        display: block;
+    }
+}
